@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Welcome</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1><%= projectName %></h1>
+    <p>Welcome to our website!</p>
+  <ul>
+    <% for(var i=0;i<=2;i++){ %>
+    <li>Try our service</li>
+    <% }%>
+  </ul>
   </body>
 </html>
