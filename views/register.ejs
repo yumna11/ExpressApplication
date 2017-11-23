@@ -8,10 +8,17 @@
 <% include templates\header.ejs %>
 <h1>Register</h1>
 <p>Want to be a video champ?</p>
+<p>Over <%= subscribers%> people have become video champ with us..</p>
 <div>
     <p>
         Sign up with us.
     </p>
+    <p> <%= videoData.categoryName %> </p>
+    <ul>
+        <% videoData.categories.forEach(function (item) {   %>
+        <li><a href="https://thenewboston.com/videos_food.php?+<%= item.categoryID %>"> <%= item.categoryName %></a></li>
+        <% }); %>
+    </ul>
 </div>
 </body>
 </html>
